@@ -1,0 +1,155 @@
+*{
+    margin:0;
+}
+
+/*HEADER*/
+
+header{
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    height: 375px; 
+}
+
+.cabecera-principal{
+    background-color: aliceblue;
+    display:flex;
+    justify-content: space-between ;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo-de-la-pagina{
+    background-color: blue;
+    margin-left: 10px;
+    height: 75%;
+    flex-basis: 100px;
+}
+
+.boton-cabecera{
+    background-color: brown;
+    margin-right: 10px;  
+    height: 75%;
+    flex-basis: 100px;
+}
+
+.banner{
+    background-color: aqua;
+    flex-grow: 4;
+}
+
+/*CONTENIDO PRINCIPAL*/
+
+main{ 
+    background-color: blueviolet;
+    display: flex;  
+    margin-top: 20px;
+}
+
+.filtros{
+    background-color: azure;    
+    width: 20%;
+}
+
+.contenido{
+    background-color: brown;
+    width: 80%;
+}
+
+/*FILTROS*/
+
+.filtros{    
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenedor-de-filtro{
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+.contenedor-de-filtro-cabecera{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 20px;
+    width: 90%;
+}
+
+
+/*CONTENIDO*/   
+
+.contenido{
+    background-color: darkblue; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center ;
+}
+
+.control-de-productos{
+    background-color: darkgoldenrod;
+    margin-top: 20px;
+    width: 90%;
+    height: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botones-de-vista{
+    background-color: darkgreen;
+    width: 20%;
+    height: 80%;
+    margin-right: 10px;
+}
+.productos{
+    background-color: darkkhaki;
+    margin-top: 15px;
+    width: 90%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.producto{
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 250px;
+    height: 500px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: dimgray;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.contenedor-del-logo{
+    background-color: firebrick;
+    width: 30%;
+    height: 30px;
+}
