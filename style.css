@@ -1,6 +1,19 @@
 *{
     margin:0;
 }
+h1,h2,h3,h4,h5,h6,label,p,.label-input{
+    margin-bottom: 5px;
+   
+}
+
+h3{
+    font-weight: bold;
+}
+
+input{
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /*HEADER*/
 
@@ -10,6 +23,13 @@ header{
     flex-direction: column;
     height: 375px; 
 }
+
+.banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .cabecera-principal{
     background-color: aliceblue;
@@ -58,6 +78,8 @@ main{
 
 /*FILTROS*/
 
+/*FILTROS - CABECERA*/
+
 .filtros{    
     background-color: burlywood;
     display: flex;
@@ -66,27 +88,70 @@ main{
     align-items: center;
 }
 
-.contenedor-de-filtro{
-    background-color: chocolate;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 10px;
-    margin-top: 20px;
-    
-}
 
 .contenedor-de-filtro-cabecera{
     background-color: cornflowerblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 20px;
+    margin-top: 20px;
+    padding: 10px;
     width: 90%;
 }
+
+/*FILTROS - BUSQUEDA*/
+
+.contenedor-de-filtro{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.contenedor-del-input{
+    margin-top: 10px;
+}
+
+.entrada-de-busqueda{
+    
+    border:none;
+    border-bottom:2px rgb(53, 52, 52) solid;
+    padding: 5px;
+    outline:none;
+    height: 30px;
+    width: 230px;
+}
+.entrada-de-busqueda:focus{
+    border: 2px rgb(53, 52, 52) solid;
+    border-radius: 5px;
+}
+
+/*FILTROS - CATEGORIA*/
+
+.label-input{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/*FILTROS - REVIEW*/
+.label-categorias{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contenedor-estrellas{
+    margin-left: 5px;
+}
+
+.fa-star{
+    color: #fbc02d;
+}
+
 
 
 /*CONTENIDO*/   

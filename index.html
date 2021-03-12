@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <title>Tienda</title>
 </head>
+
 <body>
 
     <!-- HEADER -->
@@ -25,7 +29,7 @@
         </div>
 
         <div class="banner">
-            <h1 class="nombre-categoria-productos"></h1>
+            <h1 class="nombre-categoria-productos">ELECTRÓNICA</h1>
         </div>
     </header>
 
@@ -37,117 +41,128 @@
 
         <section class="filtros">
 
-        <!-- FILTROS-CABECERA --> 
+            <!-- FILTROS-CABECERA -->
 
-            <div class="contenedor-de-filtro">
-                <div class="contenedor-de-filtro-cabecera">
-                    <h2 class="titulo-filtro"></h2>
-                    <button type="button" class="boton-limpiar-filtros">
-                        <i></i>
-                        <p></p>
-                    </button>
-                </div>
+            <div class="contenedor-de-filtro-cabecera">
+                <h2 class="titulo-filtro">FILTROS</h2>
+                <button type="button" class="boton-limpiar-filtros">
+                    <i></i>
+                    <p>Limpiar</p>
+                </button>
             </div>
 
-        <!-- FILTROS-BUSQUEDA -->
+            <!-- FILTROS-BUSQUEDA -->
+
 
             <div class="contenedor-de-filtro">
-                <h3 class="nombre-filtro"></h3>
-                <label class="contenedor-del-buscador">
-                    <input type="text" class="entrada-de-busqueda" placeholder="">
+                <h3 class="nombre-filtro">BUSQUEDA</h3>
+                <label for="busqueda" class="contenedor-del-input">
+                    <input type="text" class="entrada-de-busqueda" id="busqueda" name="busqueda"
+                        placeholder="Buscar productos">
                     <i></i>
                 </label>
             </div>
 
-        <!-- FILTROS-CATEGORIA -->
+
+            <!-- FILTROS-CATEGORIA -->
+
 
             <div class="contenedor-de-filtro">
-                <h3 class="nombre-filtro"></h3>
-                <label>
-                    <input type="checkbox" class="filtro-categoria">
-                    <p></p>
-                    <input type="checkbox" class="filtro-categoria">
-                    <p></p>
-                    <input type="checkbox" class="filtro-categoria">
-                    <p></p>
-                    <input type="checkbox" class="filtro-categoria">
-                    <p></p>
-                    <input type="checkbox" class="filtro-categoria">
-                    <p></p>
+                <h3 class="nombre-filtro">CATEGORIAS</h3>
+                <label for="consolas">
+                    <input type="checkbox" class="filtro-categoria" name="categorias" id="consolas">
+                    <span class="label-input">CONSOLAS</span>
+                </label>
+                <label for="notebooks">
+                    <input type="checkbox" class="filtro-categoria" name="categorias" id="notebooks">
+                    <span class="label-input">NOTEBOOKS</span>
+                </label>
+                <label for="camaras">
+                    <input type="checkbox" class="filtro-categoria" name="categorias" id="camaras">
+                    <span class="label-input">CÁMARAS</span>
+                </label>
+                <label for="celulares">
+                    <input type="checkbox" class="filtro-categoria" name="categorias" id="celulares">
+                    <span class="label-input">CELULARES</span>
+                </label>
+                <label for="accesorios">
+                    <input type="checkbox" class="filtro-categoria" name="categorias" id="accesorios">
+                    <span class="label-input">ACCESORIOS</span>
                 </label>
             </div>
+
 
             <!-- FILTROS-REVIEW -->
 
             <div class="contenedor-de-filtro">
 
-                <h3 class="nombre-filtro"></h3>
-                
-                <label>
-                    <input type="checkbox" class="filtro-review" value="5">
+                <h3 class="nombre-filtro">PUNTAJE</h3>
+
+                <label for="5" class="label-categorias">
+                    <input type="checkbox" class="filtro-review" name="puntaje" value="5" id="5">
                     <div class="contenedor-estrellas">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="label-input">(5)</span>
                     </div>
-                    <p></p> 
                 </label>
 
-                <label>
-                    <input type="checkbox" class="filtro-review" value="4">
+                <label for="4" class="label-categorias">
+                    <input type="checkbox" class="filtro-review" name="puntaje" value="4" id="4">
                     <div class="contenedor-estrellas">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="label-input">(4)</span>
                     </div>
-                    <p></p> 
                 </label>
 
-                <label>
-                    <input type="checkbox" class="filtro-review" value="3">
+                <label for="3" class="label-categorias">
+                    <input type="checkbox" class="filtro-review" name="puntaje" value="3" id="3">
                     <div class="contenedor-estrellas">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="label-input">(3)</span>
                     </div>
-                    <p></p> 
                 </label>
 
-                <label>
-                    <input type="checkbox" class="filtro-review" value="2">
+                <label for="2" class="label-categorias">
+                    <input type="checkbox" class="filtro-review" name="puntaje" value="2" id="2">
                     <div class="contenedor-estrellas">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="label-input">(2)</span>
                     </div>
-                    <p></p> 
                 </label>
 
-                <label>
-                    <input type="checkbox" class="filtro-review" value="1">
+                <label for="1" class="label-categorias">
+                    <input type="checkbox" class="filtro-review" name="puntaje" value="1" id="1">
                     <div class="contenedor-estrellas">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span class="label-input">(1)</span>
                     </div>
-                    <p></p> 
                 </label>
             </div>
         </section>
 
         <!-- CONTENIDO -->
 
-        <section class="contenido"> 
+        <section class="contenido">
             <header class="control-de-productos">
                 <p class="cantidad-productos-filtrados">
 
@@ -163,8 +178,8 @@
                 </div>
             </header>
 
-            <div class="productos"> 
-                
+            <div class="productos">
+
                 <article class="producto">
                     <div class="imagen-del-producto">
                         <img src="" alt="">
@@ -371,9 +386,10 @@
     <footer>
         <div class="contenedor-del-logo">
             <img src="" alt="" class="logo">
-            <p></p>     
+            <p></p>
         </div>
     </footer>
 
 </body>
+
 </html>
