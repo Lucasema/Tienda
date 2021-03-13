@@ -199,7 +199,6 @@ main{
     align-items: center;
     margin: 10px;
     width: 250px;
-    height: 500px;
 }
 
 .contenedor-imagen-del-producto{
@@ -275,3 +274,45 @@ footer{
        justify-content: center;
     }
 }
+/*VISTA DE PRODUCTOS EN COLUMNAS*/
+
+/*agregar al div de productos*/
+.columna{
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/*agrgar a los articles*/
+.fila{
+    flex-direction: row;
+    align-items: flex-start;
+    width: 96%;
+}
+
+/*agregar al div que contiene la imagen*/
+.imagen-reducida{
+    width: 40%;
+}
+
+/*agregar al div cuerpo del producto*/
+.centrado{
+    align-self: center;
+    align-items: flex-start;
+}
+
+/*agregar al h3 del nombre del producto, al p del precio y al div contenedor de las estrellas*/
+.text-aling-start{
+    text-align: start;
+}
+
+/*sgregar al div que contiene el boron (accion del producto)*/
+.width-reducido{
+    width: 50%;
+    padding-left: 0;
+}
+
+.hidden{
+    display: none;
+}
+
